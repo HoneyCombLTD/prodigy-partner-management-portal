@@ -1,7 +1,7 @@
 {
     "primaryLangCode": "eng",
-    "secondaryLangCode": "ara",
+    "secondaryLangCode": "fra",
     "baseUrl": "https://pmp.techno-associates.live/",
     "pmpUrl":"/",
-    "version":"v1.2.0.1"
+    "version":"v1.2.0.2"
 } 
