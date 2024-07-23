@@ -32,6 +32,9 @@
     "welcomeMessage":"Welcome to Mosip Partner portal fra !",
     "Logout":"Logout_fra"
   },
+  "headermessage":{
+    "vesion":"Pmp UI version"
+  },
   "singleView": {
     "errorMessages": [
       "No record found_fra",

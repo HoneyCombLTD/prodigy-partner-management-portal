@@ -44,6 +44,8 @@ export class HeaderComponent implements OnInit {
     // tslint:disable-next-line:no-string-literal
     translateService.use(appConfigService.getConfig()['primaryLangCode']);
     this.appVersion = appConfigService.getConfig()["version"];
+    console.log('Version: ', this.appVersion);
+    console.log('config: ', appConfigService.getConfig())
   }
 
   ngOnInit() {
