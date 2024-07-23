@@ -32,6 +32,9 @@
     "welcomeMessage":"Welcome to Mosip Partner portal !",
     "Logout":"Logout"
   },
+  "headermessage":{
+        "vesion":"Pmp UI version"
+    },
   "singleView": {
     "errorMessages": ["No record found", "A technical error has occurred"],
     "buttonText": "OK",

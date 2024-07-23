@@ -1,12 +1,26 @@
 <mat-toolbar>
-  <div class="menu" [ngStyle]="{'display' : (screenResize > 840) ? 'none' : 'block'}">
+  <div
+    class="menu"
+    [ngStyle]="{'display' : (screenResize > 840) ? 'none' : 'block'}"
+  >
     <button mat-icon-button id="menu" (click)="sideMenuService.openNav()">
-          <mat-icon>menu</mat-icon>
-        </button>
+      <mat-icon>menu</mat-icon>
+    </button>
   </div>
   <div class="mosip-logo">
-    <span><img src="./assets/images/logo-final.png" width="50" height="54" alt="Logo"></span>&nbsp;
-    <span [ngStyle]="{'display' : (screenResize > 840) ? 'inline-block' : 'none'}"><b>MOSIP</b></span>
+    <span
+      ><img
+        src="./assets/images/logo.png"
+        width="50"
+        height="54"
+        alt="Logo" /></span
+    >&nbsp;
+    <span
+      [ngStyle]="{'display' : (screenResize > 840) ? 'inline-block' : 'none'}"
+      ><b>MOSIP</b><b class="version-txt">
+        {{ 'headermessage.vesion' | translate }} : {{ appVersion }}</b
+      ></span
+    >
   </div>
   <div class="zone">
     <h6>{{zone}}</h6>
@@ -15,3 +29,16 @@
     <app-hamburger-menu [data]="profile"></app-hamburger-menu>
   </div>
 </mat-toolbar>
+<div class="basic-container">
+  <mat-grid-list cols="4" rowHeight="10px">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.border]="tile.border"
+      [style.background]="tile.color"
+    >
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

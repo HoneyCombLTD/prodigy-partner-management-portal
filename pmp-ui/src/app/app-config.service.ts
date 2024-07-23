@@ -13,6 +13,7 @@ export class AppConfigService {
 
   async loadAppConfig() {
     this.appConfig = await this.http.get('./assets/config.json').toPromise();
+    
   }
 
   getConfig() {

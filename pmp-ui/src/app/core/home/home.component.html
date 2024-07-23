@@ -47,7 +47,20 @@
 </div>
 
 <div id="home-component"  *ngIf="!partnerIdDetail" style="text-align: center;margin-top: 60px;margin-left: -10em;">
+	<img
+    src="assets\images\logo.png"
+    class="header--logo"
+    style="max-height: 180px;"
+  />
+<!--   
   <h3 class="mat-h1" *ngIf="labels">
     {{labels.welcomeMessage | translate }}
+  </h3> -->
+  <h2 class="title" *ngIf="labels">
+    PRODIGY IDENTITY MANAGEMENT
+  </h2>
+
+  <h3 class="discription" *ngIf="labels">
+    PARTNER PORTAL
   </h3>
 </div>
